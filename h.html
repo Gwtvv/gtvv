@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Platform Video Sharing Sederhana</h1>
+    
+    <h2>Upload Video</h2>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="videoFile" accept="video/*" required>
+        <input type="text" name="videoTitle" placeholder="Judul video" required>
+        <input type="submit" value="Upload">
+    </form>
+
+    <h2>Video Terbaru</h2>
+    <div class="video-list">
+        <div class="video">
+            <video controls>
+                <source src="videos/sample.mp4" type="video/mp4">
+                Browser Anda tidak mendukung pemutaran video.
+            </video>
+            <h3>Judul Video</h3>
+        </div>
+    </div>
+</body>
+</html>
